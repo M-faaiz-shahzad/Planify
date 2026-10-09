@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Compare plans and choose the right package for your next project.">
+  <title>Planify — Plans & Secure Checkout</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="page-glow glow-one"></div><div class="page-glow glow-two"></div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Planify home"><span class="brand-mark">✦</span> planify<span class="brand-dot">.</span></a>
+    <nav aria-label="Main navigation"><a href="#plans">Plans</a><a href="#why-us">Why Planify</a><a class="nav-cta" href="#plans">Get started <span>↗</span></a></nav>
+  </header>
+
+  <main>
+    <section class="hero" id="plans">
+      <div class="eyebrow"><span class="eyebrow-dot"></span> SIMPLE, TRANSPARENT PRICING</div>
+      <h1>The right plan for<br><span>your next big thing.</span></h1>
+      <p class="hero-copy">Powerful tools, less busywork. Pick a plan that fits your goals and scale up whenever you're ready.</p>
+      <div class="billing-control" role="group" aria-label="Billing period">
+        <button class="billing-option active" type="button" data-billing="monthly" aria-pressed="true">Monthly</button>
+        <button class="billing-option" type="button" data-billing="yearly" aria-pressed="false">Yearly <span class="save-pill">SAVE 20%</span></button>
+      </div>
+      <div class="filter-row" role="group" aria-label="Filter plans by category">
+        <span class="filter-label">Explore plans</span>
+        <div class="filter-buttons">
+          <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All plans <span class="filter-count">4</span></button>
+          <button class="filter-btn" type="button" data-filter="basic" aria-pressed="false">Basic</button>
+          <button class="filter-btn" type="button" data-filter="premium" aria-pressed="false">Premium</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing-grid" aria-label="Pricing plans">
+      <article class="plan-card" data-category="basic" data-plan="Starter" data-monthly="9" data-yearly="7">
+        <div class="card-top"><div class="plan-icon icon-starter" aria-hidden="true">◈</div><span class="plan-type">BASIC</span></div>
+        <h2>Starter</h2><p class="plan-description">Everything you need to get your idea moving.</p>
+        <div class="price-line"><span class="currency">$</span><span class="price">9</span><span class="price-period">/ month</span></div><p class="billing-note">Billed monthly</p>
+        <button class="plan-cta secondary-cta" type="button" data-plan="Starter">Choose Starter <span>→</span></button>
+        <div class="feature-divider"></div><p class="feature-heading">WHAT'S INCLUDED</p>
+        <ul class="feature-list"><li><span>✓</span> 1 active project</li><li><span>✓</span> Core tools and templates</li><li><span>✓</span> 5 GB secure storage</li><li class="muted-feature"><span>–</span> Team collaboration</li></ul>
+      </article>
+
+      <article class="plan-card popular-card" data-category="premium" data-plan="Pro" data-monthly="19" data-yearly="15">
+        <div class="popular-badge"><span>✦</span> MOST POPULAR</div>
+        <div class="card-top"><div class="plan-icon icon-pro" aria-hidden="true">✳</div><span class="plan-type">PREMIUM</span></div>
+        <h2>Pro</h2><p class="plan-description">More power for people ready to level up.</p>
+        <div class="price-line"><span class="currency">$</span><span class="price">19</span><span class="price-period">/ month</span></div><p class="billing-note">Billed monthly</p>
+        <button class="plan-cta primary-cta" type="button" data-plan="Pro">Choose Pro <span>→</span></button>
+        <div class="feature-divider"></div><p class="feature-heading">EVERYTHING IN STARTER, PLUS</p>
+        <ul class="feature-list"><li><span>✓</span> Unlimited projects</li><li><span>✓</span> Advanced analytics</li><li><span>✓</span> 100 GB secure storage</li><li><span>✓</span> Team collaboration</li></ul>
+      </article>
+
+      <article class="plan-card" data-category="premium" data-plan="Studio" data-monthly="39" data-yearly="31">
+        <div class="card-top"><div class="plan-icon icon-studio" aria-hidden="true">✺</div><span class="plan-type">PREMIUM</span></div>
+        <h2>Studio</h2><p class="plan-description">A complete workspace for growing teams.</p>
+        <div class="price-line"><span class="currency">$</span><span class="price">39</span><span class="price-period">/ month</span></div><p class="billing-note">Billed monthly</p>
+        <button class="plan-cta secondary-cta" type="button" data-plan="Studio">Choose Studio <span>→</span></button>
+        <div class="feature-divider"></div><p class="feature-heading">EVERYTHING IN PRO, PLUS</p>
+        <ul class="feature-list"><li><span>✓</span> 10 team seats</li><li><span>✓</span> 1 TB secure storage</li><li><span>✓</span> Priority support</li><li><span>✓</span> Custom workflows</li></ul>
+      </article>
+
+      <article class="plan-card" data-category="basic" data-plan="Free" data-monthly="0" data-yearly="0">
+        <div class="card-top"><div class="plan-icon icon-free" aria-hidden="true">♡</div><span class="plan-type">BASIC</span></div>
+        <h2>Free</h2><p class="plan-description">Try the essentials and see what clicks.</p>
+        <div class="price-line"><span class="currency">$</span><span class="price">0</span><span class="price-period">/ forever</span></div><p class="billing-note">No card required</p>
+        <button class="plan-cta secondary-cta" type="button" data-plan="Free">Start for free <span>→</span></button>
+        <div class="feature-divider"></div><p class="feature-heading">WHAT'S INCLUDED</p>
+        <ul class="feature-list"><li><span>✓</span> 1 personal workspace</li><li><span>✓</span> Essential templates</li><li><span>✓</span> 1 GB secure storage</li><li class="muted-feature"><span>–</span> Priority support</li></ul>
+      </article>
+    </section>
+
+    <section class="trust-strip" id="why-us">
+      <div class="trust-item"><span class="trust-icon">↗</span><div><strong>Built to scale</strong><p>Upgrade as you grow</p></div></div>
+      <div class="trust-item"><span class="trust-icon">⌁</span><div><strong>Clear pricing</strong><p>No hidden fees</p></div></div>
+      <div class="trust-item"><span class="trust-icon">♡</span><div><strong>Here to help</strong><p>Real people, real support</p></div></div>
+    </section>
+  </main>
+  <footer><a class="brand footer-brand" href="#"><span class="brand-mark">✦</span> planify<span class="brand-dot">.</span></a><p>Make room for your best work.</p><span>© 2026 Planify. Demo storefront.</span></footer>
+
+  <!-- Checkout UI demo. Connect a payment provider before accepting real payments. -->
+  <div class="modal-backdrop" id="checkout-modal" hidden>
+    <section class="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkout-title">
+      <button class="modal-close" id="close-checkout" type="button" aria-label="Close checkout">×</button>
+      <div class="checkout-heading">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> SECURE CHECKOUT</div>
+        <h2 id="checkout-title">Complete your order</h2>
+        <p>Enter your billing details to review this demo checkout.</p>
+      </div>
+      <div class="checkout-layout">
+        <form id="checkout-form" class="checkout-form" novalidate>
+          <section class="form-section">
+            <h3><span class="step-number">1</span> Contact details</h3>
+            <div class="field-grid">
+              <label class="field full-field">Full name<input name="fullName" autocomplete="name" placeholder="Alex Morgan" required></label>
+              <label class="field">Email address<input name="email" type="email" autocomplete="email" placeholder="alex@example.com" required></label>
+              <label class="field">Country / region<select name="country" autocomplete="country-name" required><option value="">Choose country</option><option>Pakistan</option><option>United States</option><option>United Kingdom</option><option>Canada</option><option>Australia</option><option>India</option><option>United Arab Emirates</option></select></label>
+              <label class="field full-field">Billing address<input name="address" autocomplete="street-address" placeholder="Street address" required></label>
+              <label class="field">City<input name="city" autocomplete="address-level2" placeholder="Lahore" required></label>
+              <label class="field">Postal code<input name="postalCode" autocomplete="postal-code" placeholder="54000" required></label>
+            </div>
+          </section>
+          <section class="form-section payment-section">
+            <h3><span class="step-number">2</span> Payment method</h3>
+            <div class="payment-methods">
+              <div class="payment-method selected"><span class="radio-dot"></span><span>Credit / debit card</span><span class="card-brands">VISA · MC</span></div>
+              <div class="payment-security"><span>♧</span> Your payment details should be processed by a trusted payment provider.</div>
+            </div>
+            <div class="field-grid card-fields">
+              <label class="field full-field">Name on card<input name="cardName" autocomplete="cc-name" placeholder="Name as printed on card" required></label>
+              <label class="field full-field">Card number<input name="cardNumber" inputmode="numeric" autocomplete="cc-number" placeholder="4242 4242 4242 4242" maxlength="23" required></label>
+              <label class="field">Expiry date<input name="expiry" inputmode="numeric" autocomplete="cc-exp" placeholder="MM / YY" maxlength="7" required></label>
+              <label class="field">Security code (CVC)<input name="cvc" inputmode="numeric" autocomplete="cc-csc" placeholder="123" maxlength="4" required></label>
+            </div>
+            <p class="demo-warning"><strong>Demo only:</strong> this page does not send or save card data. Never collect real card details without a PCI-compliant payment provider.</p>
+          </section>
+          <label class="terms-check"><input type="checkbox" name="terms" required> I agree to the terms of service and recurring billing for the selected plan.</label>
+          <p class="form-error" id="form-error" role="alert"></p>
+          <button class="pay-button" id="pay-button" type="submit">Review demo order <span>→</span></button>
+          <p class="secure-caption">⌑ Encrypted checkout UI preview · No real payment will be taken</p>
+        </form>
+        <aside class="order-summary">
+          <p class="summary-label">ORDER SUMMARY</p>
+          <div class="summary-product"><div class="summary-icon">✦</div><div><strong id="summary-plan">Pro plan</strong><p id="summary-billing">Monthly subscription</p></div></div>
+          <div class="summary-line"><span>Plan price</span><span id="summary-price">$19.00</span></div>
+          <div class="summary-line"><span>Tax</span><span>Calculated at checkout</span></div>
+          <div class="summary-line total-line"><strong>Due today</strong><strong id="summary-total">$19.00</strong></div>
+          <div class="summary-note"><span>✓</span><p>You can review your selected plan and billing period before continuing.</p></div>
+          <button class="change-plan" type="button" id="change-plan">← Back to plans</button>
+        </aside>
+      </div>
+      <div class="checkout-success" id="checkout-success" hidden>
+        <div class="success-mark">✓</div><h3>Demo order reviewed!</h3>
+        <p>Your form passed basic browser checks. No payment was processed and no card information was sent anywhere.</p>
+        <button class="plan-cta primary-cta" type="button" id="success-close">Back to plans →</button>
+      </div>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
